@@ -45,7 +45,7 @@ class ApplicationController < Sinatra::Base
   end
   
   delete '/articles/:id' do
-   binding.pry
+   #binding.pry
     @article = Article.find_by(id: params[:id])
     @article.destroy
     
